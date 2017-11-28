@@ -25,9 +25,9 @@ lazy val dockerSettings = Seq(
     }
   },
   imageNames in docker := Seq(
-    ImageName(s"lostintime/${name.value}:latest"),
+    ImageName(s"tank/${name.value}:latest"),
     ImageName(
-      namespace = Some("lostintime"),
+      namespace = Some("tank"),
       repository = name.value,
       tag = Some(version.value)
     )
@@ -40,7 +40,7 @@ lazy val `hello-akka` = (project in file("."))
   .settings(dockerSettings: _*)
   .settings(scalaSettings: _*)
   .settings(
-    organization := "com.lostintimedev",
+    organization := "yuzhonglele",
     name := "hello-akka",
     version := "0.1.1",
     mainClass in Compile := Some("com.lostintimedev.hello.Boot"),
