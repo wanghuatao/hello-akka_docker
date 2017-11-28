@@ -26,6 +26,8 @@ trait HelloAkka {
       terminationMessage = End,
       settings = ClusterSingletonManagerSettings(system).withRole("worker")
     ),
+
+
     name = "counter"
   )
 
