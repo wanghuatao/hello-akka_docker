@@ -32,8 +32,10 @@ trait HelloAkka {
   )
 
   def log: LoggingAdapter = Logging(system, this.getClass)
+
 }
 
 object Boot extends App with HelloAkka {
-  log.info(s"server is online")
+
+  log.info(s"server is online test")
 }
