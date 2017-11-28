@@ -37,5 +37,5 @@ trait HelloAkka {
 
 object Boot extends App with HelloAkka {
 
-  log.info(s"server is online test")
+  log.info(s"server is online test 2")
 }
